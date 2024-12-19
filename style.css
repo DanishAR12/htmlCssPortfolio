@@ -1,0 +1,338 @@
+body{
+    background-color: #E5E5E5;
+}
+/* by default margen and padding of element 0px */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* styling header section start */
+.header-container{
+    width: 100%;
+    height: 10vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* head right-side styling */
+.head-right-side{
+    width: 40%;
+}
+.head-ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+.head-li{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.head-li:hover{
+    color:blue ;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* head left-side styling */
+.head-left-side{
+    margin-left: 30px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: serif;
+}
+.head-span-heading{
+    color: red;
+}
+/* Responsive Header section */
+@media screen and (min-width:100px) and (max-width:750px) {
+    .header-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .head-right-side{
+        width: 100%;
+    }
+    .head-li{
+        font-size: 15px;
+    }
+}
+/* styling header section End */
+
+/* styling home page start */
+.main-container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
+.home-container{
+    width: 80%;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    box-shadow: 1px 4px 10px gray;
+}
+/* styling home left div start */
+.home-left-div{
+    width: 40%;
+}
+.home-heading{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.home-parp{
+font-size: 18px;
+margin-top: 15px;
+font-weight: 600;
+}
+.home-spn-heading{
+    color: darkorange;
+    text-decoration: underline red;
+}
+/* button styling start */
+.home-btn{
+    background-color: rgb(238, 15, 15);
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+}
+.home-btn:hover{
+    color:black;
+    background-color: yellow;
+    cursor: pointer;
+}
+.home-btn:active{
+    background-color: green;
+}
+/* button styling start */
+
+/* styling home left div end */
+
+/* styling home right div  start*/
+.home-right-div{
+margin-right:10px;
+}
+.home-image{
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+/* styling home right div end */
+
+/* Responsive Home section */
+@media screen and (min-width:100px) and (max-width:855px) {
+    .main-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:start;
+    }
+    .home-container{
+        width: 100%;
+        height: 100%;
+        flex-direction:column-reverse;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+       }
+    .home-left-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-image{
+        width: 150px;
+        height: 200px;
+        margin-top: 5px;
+    }
+    .home-heading{
+        font-size: 30px;
+        margin: 10px 15px;
+    }
+    .home-parp{
+        font-size: 15px;
+        margin: 15px;
+    }
+    .home-btn{
+        padding: 5px 15px;
+        border: none;
+        margin: 15px 0px ;
+    }
+}
+/* styling home page end  */
+
+/* styling services section start */
+.main-services{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.services-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.ser-top-div{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ser-heading{
+    font-size: 30px;
+    font-style: italic;
+    font-family: sans-serif;
+    margin: 15px 0 10px 0;
+}
+.ser-para{
+    font-weight: 700;
+    font-size: 18px;
+}
+.ser-bottom-div{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ser-card-div{
+    width: 300px;
+    height: 200px;
+    background-color:white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 10px gray;
+}
+/* Responsive services section */
+@media screen and (min-width:100px) and (max-width:750px) {
+    .main-services{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .services-container{
+        width: 100%;
+        height: 100%;
+    }
+    .ser-top-div{
+        width: 100%;
+        
+   }
+   .ser-para{
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 10px;
+}
+.ser-bottom-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+}
+/* styling services section end */
+
+/* styling footer start */
+.main-footer{
+    width: 100%;
+    height: 40vh;
+    background-color:yellow;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer-container{
+    width: 80%;
+    height: 35vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-heading{
+    font-size: 32px;
+    font-weight: bold;
+    /* margin-top: 15px; */
+}
+.socails-link{
+display: flex;
+}
+.footer-link{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 20px;
+    
+}
+.foot-li{
+text-decoration: none;
+color: blue;
+}
+.foot-email{
+font-size: 20px;
+}
+.foot-copyright{
+font-size: 20px;
+font-style: italic;
+}
+/* Responsive footer section */
+@media screen and (min-width:100px) and (max-width:750px) {
+    .main-footer{
+        width: 100%;
+        height: 100%;
+    }
+    .footer-container{
+        width: 100%;
+        height: 100%vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-link{
+        gap: 25px;
+        font-size: 15px;
+    }
+    .foot-email{
+        font-size: 15px;
+    }
+    .foot-copyright{
+        font-size: 15px;
+        font-style: normal;
+        margin-left: 10px;
+        }
+}
+/* styling footer end */
